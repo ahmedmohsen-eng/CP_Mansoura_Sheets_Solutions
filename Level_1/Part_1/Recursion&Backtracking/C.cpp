@@ -13,7 +13,15 @@ int fast(int n,int m){
     int ans=fast(n,m/2)%mod;
     ans=(ans*ans)%mod;
     
-    if(m&1) ans=(ans*n)%mod;
+    if(m&1) ans=(ans*n)%mod;//if power is odd , so when dividing by two you need to multiply in another n
+    //for ex:
+    // 2  pow  3
+    // 2 pow (3/2) * 2 pow (3/2)   ===========>> here you it is rounded in both to 1 : because int x = 3/2; it is stored as int so it is 1
+    // so we multiply in another 3
+    // so the final answer is : 
+    // 2 pow 1 * 2 pow 1 * 2
+
+    // but if it is even it is perfectly divided 
     
     return ans;
     
