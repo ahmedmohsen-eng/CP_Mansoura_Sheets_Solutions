@@ -1,5 +1,28 @@
 // https://vjudge.net/contest/669349#problem/C
 
+#include<bits/stdc++.h>
+using namespace std;
+#define int long long
+
+int mod=1000000007;
+
+int fast(int n,int m){
+    if(m==0) return 1;
+    
+    
+    int ans=fast(n,m/2)%mod;
+    ans=(ans*ans)%mod;
+    
+    if(m&1) ans=(ans*n)%mod;
+    
+    return ans;
+    
+}
+
+signed main(){
+    int n,m;cin>>n>>m;
+    cout<<fast(n%mod,m);
+}
 
 
 
