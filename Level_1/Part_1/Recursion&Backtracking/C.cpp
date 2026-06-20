@@ -1,5 +1,10 @@
 // https://vjudge.net/contest/669349#problem/C
 
+
+
+
+/*
+//tle and stack overflow:
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
@@ -16,7 +21,7 @@ signed main(){
     int n,m;cin>>n>>m;
     cout<<solve(n,m);
 }
-
+*/
 
 
 
