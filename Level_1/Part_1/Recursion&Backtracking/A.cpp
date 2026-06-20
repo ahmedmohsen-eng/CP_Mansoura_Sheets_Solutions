@@ -1,3 +1,5 @@
+// https://vjudge.net/contest/669349#problem/A
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
