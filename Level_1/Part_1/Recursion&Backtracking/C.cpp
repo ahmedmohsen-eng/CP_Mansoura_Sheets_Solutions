@@ -1,4 +1,3 @@
-//problem link:
 // https://vjudge.net/contest/669349#problem/C
 
 #include<bits/stdc++.h>
