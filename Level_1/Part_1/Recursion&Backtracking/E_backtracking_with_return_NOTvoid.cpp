@@ -6,7 +6,6 @@ using namespace std;
 //1-recursion
 //2-bitmasks
 
-int ans=LLONG_MAX;
 int solve(int n,vector<int>&v,int i=0 , int sm1=0 , int sm2=0){
     if(i==n)
         return  llabs(sm1-sm2);
