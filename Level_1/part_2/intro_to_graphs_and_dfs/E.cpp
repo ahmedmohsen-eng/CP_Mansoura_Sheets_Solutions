@@ -14,6 +14,13 @@ vector<vector<bool>>vis;
 int n,m;
 vector<string>maze;
 
+
+////if 8 directions:
+//int dx[] = {-1,-1,-1,0,0,1,1,1};
+//int dy[] = {-1,0,1,-1,1,-1,0,1};
+
+
+
 int dx[] = {1,-1,0,0};
 int dy[] = {0,0,1,-1};
 
