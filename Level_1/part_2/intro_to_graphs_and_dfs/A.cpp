@@ -21,8 +21,8 @@ void dfs(int u){
     
     for(auto v : adj[u]){
         if(!vis[v]){
-            // freq[u]++; 
-            // freq[v]++;
+            // freq[u]++; xxxxxxx as mentioned before tree length is not the solution
+            // freq[v]++; xxxxxxx as mentioned before tree length is not the solution
             dfs(v);
         }
     }
