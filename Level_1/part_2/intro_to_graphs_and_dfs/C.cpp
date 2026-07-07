@@ -24,7 +24,6 @@ void dfs(int u){
 
 
 void solve(const int&tt){
-    // to be a tree, it must m=n-1 (edges=nodes-1)  
     int n,m;cin>>n>>m;
     adj.assign(n+1,{});
     vis.assign(n+1,0);
