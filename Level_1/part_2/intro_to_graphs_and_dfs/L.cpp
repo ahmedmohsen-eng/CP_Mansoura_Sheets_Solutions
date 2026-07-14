@@ -81,7 +81,7 @@ void solve(const int& tt){
         int starty=-1;
         for(int i = 0 ; i < n ;i++){
             cin>>maze[i];
-            for(int j = 0 ; j < (int)maze[i].size() ; j++ ){//fix : oop till size of maze[i] not size of maze
+            for(int j = 0 ; j < (int)maze[i].size() ; j++ ){//fix : loop till size of maze[i] not size of maze
                 vis[i].push_back(0);
                 if(maze[i][j]=='P'){
                     startx=i;
