@@ -18,6 +18,7 @@ int dx[] = {1,-1,0,0};
 int dy[] = {0,0,1,-1};
 
 
+// (use map to handle input here) ___________________________________________________________________________________________________________
 map<int,int>vis;
 set<int>nodes;//fix : set not vector to put only one copy of each node
 map<int,vector<int>>adj;
@@ -38,12 +39,12 @@ void dfs(int node){
 // (use map to handle input here)
 // check empty graph
 // check if there is exactly one root by indegrees
-// dfs to mark all children and their children as vis ,, then if there is a node which is not visited so it is not a tree
+// dfs from the root to mark all children and their children as vis ,, then if there is a node which is not visited so it is not a tree
 
 
 
 void solve(const int& tt){
-    
+    // handle input ___________________________________________________________________________________________________________
     int tc=0;
     while(true){
         
@@ -74,14 +75,14 @@ void solve(const int& tt){
         
         if(!valid) break;
         
-        //fix : zero graph case
+        //fix : zero graph ___________________________________________________________________________________________________________
         if(adj.size()==0){
             cout<<yes;
             continue;
         }
         
         bool ok = true;
-        
+        // check if there is exactly one root by indegrees ___________________________________________________________________________________________________________
         int rote=-1;
         int roots_num=0;
         
@@ -94,7 +95,7 @@ void solve(const int& tt){
             cout<<no;
             continue;
         }
-        
+        // dfs from the root to mark all children and their children as vis ,, then if there is a node which is not visited so it is not a tree
         dfs(rote);
         
         for(auto&x:nodes){//iterate over nodes not vis, because vis contain only nodes which were vis
