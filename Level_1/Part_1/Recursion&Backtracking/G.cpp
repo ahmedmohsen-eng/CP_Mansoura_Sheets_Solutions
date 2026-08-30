@@ -42,7 +42,7 @@ void backtrack(point p){
 		return;
 	}
 	
-	//the base case written here in the condition instead of up
+	//the base case written here in the condition instead of another parameter sum
 	if(p.x<n-1){
 		sm+=grid[p.x+1][p.y];
 		backtrack({p.x+1,p.y});
