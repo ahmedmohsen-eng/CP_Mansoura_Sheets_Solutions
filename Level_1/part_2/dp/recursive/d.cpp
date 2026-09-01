@@ -95,6 +95,29 @@ void build(int i,int j){
 	
 }
 
+
+//if two solutions exist (if both ch1 and ch2 is correct):
+	//then it takes based on your code:
+					//so it take ch2 
+		//here i said : if ch1>ch2 take ch1 otherwise (including case of ==):
+											//then take ch2 which is(i,j+1) which means:
+													//skip charahcter from t
+														//because you shifted j by 1
+
+/*
+example that apply to the current code logic if there are two answers
+
+if there are 2 right answers for example
+let s = ahmedmossshssen
+ and t = ahmedmohsensss
+
+then both are correct: ahmedmossss , ahmedmohsen
+ahmedmossss appears if ahmedmossshssen comes first
+ahmedmohsen apears if ahmedmohsensss comes first
+
+
+*/
+
 void solve(int tc){
 	// //dbg:
 	 // cerr<<"at the test case no."<<tc<<" : \n";
